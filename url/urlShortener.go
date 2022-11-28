@@ -23,5 +23,5 @@ func GenerateShortURL(originalUrl string) string {
 
 func enshortOriginalURL(originalURL string) string {
 	hash := hash2.Encode(originalURL)
-	return hash[:5]
+	return hash[:6]
 }
