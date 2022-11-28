@@ -6,16 +6,6 @@ import (
 	"github.com/gofiber/fiber"
 )
 
-func Test(c *fiber.Ctx) {
-
-	r := new(HttpResponse)
-	r.success = true
-	r.message = "Hello World"
-	r.httpStatusCode = 200
-	response(r, c)
-	return
-}
-
 func CreateShortUrl(c *fiber.Ctx) {
 	type Payload struct {
 		Url string `json:"url"`
